@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIFA Club World Cup</title>
+    <link rel="stylesheet" href="/css/layoutstyles.css">
+    <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+</head>
+    <body>
+        <div class="common header">
+            <div class="header-content">
+                <h2 id="top">An Overview of the FIFA Club World Cup</h2> 
+                <img src="./assets/img/logos/FIFA_Flag.svg.png" alt="FIFA Logo" class="fifa-logo">
+            </div>
+        </div>
+
+        <div class="page-content">
+            <div class="common leftmenu">
+                <h3>Links</h3>
+                <ul class="links">
+                    <li><a href="/officialpage.html">Official Page</a></li>
+                    <li><a href="/layout.html">Layout</a></li>
+                    <li><a href="#bottom">Bottom</a>   </li>
+                </ul>
+            </div>
+
+            <div class="common mainbody">
+                <div class="video-container">
+                    <h2>Club World Cup: A Deep Look at the Facts</h2>
+                    <iframe src="https://www.youtube.com/embed/EupbEGXIkx0" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                </div>  
+                <div class="tableau-container">
+                    <h2>Global Soccer Stats</h2>
+                    <div class="tableau-wrapper" width="700px">
+                        <tableau-viz
+                            id="tableauViz"
+                            src="https://public.tableau.com/views/GlobalSoccerStats/GlobalSoccer"
+                            toolbar="bottom"
+                            hide-tabs>
+                        </tableau-viz>
+                    </div>
+                </div>
+            </div>
+
+            <div class="common rightmenu">
+
+                <h3>Notable teams in the Club World Cup</h3>
+                <br>
+                <br>
+                
+                <ol>
+                   <li>
+                        <ul>
+                            <li>Real Madird</li>
+                            <li>Barcelona</li>
+                            <li>Bayern Munich</li>
+                            <li>Manchester City</li>
+                            <li>Chelsea</li>
+                            <li>Juventus</li>
+                            <li>Napoli</li>
+                            <li>PSG</li> 
+                        </ul>
+
+                   </li>
+
+                </ol>
+            </div>
+        </div>
+
+        <div class="common footer" id="bottom"> Welcome to the bottom of the page! This serves to show off my in page anchor! <a href="#top">Want to go back up?</a></div>
+    </body>
